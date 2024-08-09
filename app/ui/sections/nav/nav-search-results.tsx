@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import ProductsList from "@/app/ui/components/products-list"
+import ProductsList from "@/app/ui/sections/product-list"
 
 import { useSelector } from "react-redux"
 import { selectSearchBar } from "@/lib/features/nav/searchBarSlice"
