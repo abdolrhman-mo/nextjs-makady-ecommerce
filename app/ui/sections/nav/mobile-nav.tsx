@@ -5,7 +5,7 @@ import MobileNavItem from "@/app/ui/sections/nav/mobile-nav-item"
 import { useSelector } from "react-redux"
 import { selectMobileNav } from "@/lib/features/nav/mobileNavSlice"
 
-export default function() {
+export default function MobileNav() {
     const mobileNavVariants = {
         show: {
             width: '80%',

@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCoffee } from "@fortawesome/free-solid-svg-icons"
 
 export default function MobileNavItem({
-    text,
+    text = '',
     href = '',
     xMark = false,
     social = false,

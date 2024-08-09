@@ -8,8 +8,8 @@ export default function CartItems() {
                 (cartItems.length === 0) ? (
                     <p>Your cart is currently empty.</p>
                 ) : (
-                    cartItems.map(cartItem =>
-                        <CartItem cartItem={cartItem} />
+                    cartItems.map((cartItem, i) =>
+                        <CartItem key={i} cartItem={cartItem} />
                     )
                 )
             }

@@ -15,9 +15,9 @@ export default function SizeRadio({
                 'mx-auto md:mx-0',
             )}
         >
-            {Object.keys(items).map(size =>
-                <label htmlFor={size} className="capitalize cursor-pointer m-1">
-                    <input 
+            {Object.keys(items).map((size, i) =>
+                <label key={i} htmlFor={size} className="capitalize cursor-pointer m-1">
+                    <input
                         className={clsx(
                             'hidden peer',
                         )} 

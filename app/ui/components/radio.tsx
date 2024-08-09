@@ -36,8 +36,8 @@ export default function Radio({
                                 id={option}
                                 name={name} 
                                 value={option} 
-                            />
-                        }
+                                />
+                            }
                         {label}
                     </>
                 )
@@ -64,21 +64,21 @@ export default function Radio({
         // Adding the component to the option
         if (i === componentIndex) {
             return (
-                <div className={`p-4 border first:rounded-t-lg last:rounded-b-lg`}>
+                <div className={`p-4 border first:rounded-t-lg last:rounded-b-lg`} key={i}>
                     {item}
                     {component}
                 </div>
             )
         }
         return (
-            <div className={`p-4 border first:rounded-t-lg last:rounded-b-lg`}>
+            <div className={`p-4 border first:rounded-t-lg last:rounded-b-lg`} key={i}>
                 {item}
             </div>
         )
     })
     return (
         <div className={` ${styles}`}>
-            {listItems.map((item: any) => 
+            {listItems.map((item: any) =>
                     item
             )}
         </div>

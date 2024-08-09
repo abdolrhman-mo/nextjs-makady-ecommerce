@@ -41,8 +41,9 @@ export default function Page({
                     <Btn text="add to cart" theme='light' styles="text-black" />
                     <Btn text="buy it now" theme='dark' styles="border" />
                     <ul>
-                        {product.description.map(item => 
+                        {product.description.map((item, i) => 
                             <li
+                                key={i}
                                 className="list-disc"
                             >
                                 {item}

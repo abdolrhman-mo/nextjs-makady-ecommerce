@@ -47,8 +47,8 @@ export default function ProductList({
             }
         })
     }
-    const listItems = filtered.map((product: any) =>
-        <div className="col-md-3 col-6">
+    const listItems = filtered.map((product: any, i:number) =>
+        <div className="col-md-3 col-6" key={i}>
             <Product
                 name={product.name}
                 imgUrl={product.imgUrl}
