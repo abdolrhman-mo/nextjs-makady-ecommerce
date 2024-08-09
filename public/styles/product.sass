@@ -1,0 +1,89 @@
+@use 'base'
+    
+// product element
+.product
+    width: 100%
+    margin: 0 auto
+    margin-bottom: 50px
+    font-family: roc, sans-serif
+    .top
+        min-height: 350px
+        background-size: 100%
+        transition: all 0.3s ease
+        background-position: center
+        cursor: pointer
+        padding: 15px
+        position: relative
+        &:hover 
+            background-size: 110%
+            .links svg
+                opacity: 1
+        p.sale
+            color: #fff
+            background: base.$main_color
+            border-radius: 15px
+            display: inline-block
+            font-size: 13px
+            font-weight: 700
+            padding: 6px 10px
+        .links
+            // center
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            // justify content inside this div
+            width: fit-content
+            display: flex
+            // justify-content: space-between
+            svg
+                color: #383838
+                background: #fff
+                padding: 12px
+                margin: 0 5px
+                border-radius: 50%
+                font-size: 20px
+                font-weight: 400
+                // display animation
+                opacity: 0
+                transition: opacity 0.6s ease, bottom 0.3s ease
+                // hover animation
+                position: relative
+                bottom: 0
+                &:hover
+                    color: base.$main_color
+                    bottom: 5px
+    .body
+        a.title
+            text-decoration: none
+            h3
+                color: base.$font_color
+                padding: 20px 0 0
+                cursor: pointer
+                transition: all .3s ease
+                &:hover
+                    color: base.$main_color
+        p.price
+            span.line-through
+                text-decoration: line-through
+                color: #b3b3b3
+        a.add-to-wishlist
+            color: base.$font_color 
+            text-decoration: none
+            transition: all .3s ease
+            &:hover
+                color: base.$main_color
+            svg
+                padding-right: 10px
+
+@media only screen and (max-width: 1024px)
+    .product
+        .top
+            min-height: 200px
+            max-height: 200px
+
+@media only screen and (max-width: 768px)
+    .product
+        .top
+            min-height: 200px
+            max-height: 200px

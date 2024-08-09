@@ -1,0 +1,51 @@
+@use 'base'
+
+// nav section
+nav
+    z-index: 1000
+    color: base.$font_color
+    background: base.$background_color
+    height: 80px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    position: absolute
+    top: 0
+    width: 100%
+    img
+        height: 40px
+    h4
+        font-family: sed, cursive
+    form
+        input
+            background: #e7e7e7
+            padding: 0 15px 5px
+            border: none
+            border-radius: 15px
+            &:focus
+                outline: none
+                background: #fff
+    ul
+        display: flex
+        list-style-type: none
+        margin: 0
+        li
+            padding-right: 20px
+            a
+                color: base.$font_color
+                font-weight: bold
+                text-decoration: none
+                transition: all 0.3s ease
+                &:hover
+                    color: base.$main_color
+    div
+        display: flex
+        span
+            padding-right: 15px
+            cursor: pointer
+            color: base.$font_color
+            transition: all 0.3s ease
+            &:hover
+                color: base.$main_color
+        svg
+            height: 24px

@@ -1,0 +1,43 @@
+@use 'base'
+// titles color
+// $main_color: #1C6B4C
+$main_color: #686868
+// background color
+$background_color: #1A1A1A
+// $background_sec_color: #59b993
+$background_sec_color: #686868
+// font color
+$font_color: #fff   
+
+
+footer
+    padding: 60px
+    background-color: base.$background_sec_color
+    color: #fff
+    input
+        border: none
+    input[type="text"]
+        padding: 10px
+        width: 100%
+    input[type="submit"]
+        color: #fff
+        background-color: #000
+        padding: 10px
+        width: 100%
+    hr
+        margin: 60px 0 !important
+        width: 100% !important
+    ul
+        list-style-type: none
+        li
+            padding-right: 20px
+            a
+                color: base.$font_color
+                text-decoration: none
+                transition: all 0.3s ease
+                &:hover
+                    opacity: .7
+    svg
+        padding: 10px
+    p.copyright
+        opacity: 0.7  

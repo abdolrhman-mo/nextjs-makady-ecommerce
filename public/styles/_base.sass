@@ -1,0 +1,52 @@
+// titles color
+$main_color: #686868
+// background color
+$background_color: #1A1A1A
+$background_sec_color: #686868
+// font color
+$font_color: #fff   
+
+@font-face
+    font-family: roc
+    src: url("../fonts/Darker_Grotesque/DarkerGrotesque-VariableFont_wght.ttf")
+
+
+@font-face 
+    font-family: sed
+    src: url("../fonts/Sedgwick_Ave/SedgwickAve-Regular.ttf")
+
+
+.App
+    background: #000
+    color: $font_color
+    font-family: roc, sans-serif
+    font-size: 20px
+    h1, h2
+        font-size: 75px
+        font-weight: bold
+        line-height: 55px
+    h1
+        margin: 40px 0
+    h2
+        margin: 80px 0
+    hr
+        width: 80%
+        margin-right: auto !important
+        margin-left: auto !important
+    a
+        color: $font_color
+        text-decoration: none
+    a.cta
+        color: $font_color
+        text-decoration: none
+        font-weight: bold
+        background: $background_color
+        padding: 10px 40px
+        // border-radius: 35px
+        text-transform: uppercase
+        font-size: 20px
+        width: fit-content
+        letter-spacing: 3px
+        transition: all 0.3s ease
+        &:hover
+            opacity: .8

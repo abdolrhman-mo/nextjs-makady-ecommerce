@@ -1,0 +1,25 @@
+@use 'base'
+    
+// hero section
+header.hero
+    color: base.$background_color
+    background: url('../imgs/hero.jpeg')
+    background-size: 100%
+    background-position: top
+    min-height: 100vh
+    background-size: cover
+    .body
+        height: 100vh
+        padding-top: 80px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        p
+            font-weight: 500
+            font-size: 23px
+        a.cta
+            margin: 0 auto
+
+@media screen and (max-width: 768px)
+    header.hero
+        text-align: center
