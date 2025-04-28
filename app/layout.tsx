@@ -1,10 +1,7 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "@/app/globals.css"
 import StoreProvider from "./StoreProvider"
-
-const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Makady Ecommerce Store",
@@ -18,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <StoreProvider>
-      <html lang="en">
+      <html lang="en" className="font-sans">
         {children}
       </html>
     </StoreProvider>
